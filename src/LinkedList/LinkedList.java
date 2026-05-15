@@ -13,10 +13,12 @@ public class LinkedList {
 
     void instertAtTail(int data) {
         Node node = new Node(data);
+        if(head == null){
+            head = node;
+            return;
+        }
 
-        if(head == null) head = node;
         Node curr = head;
-
         while(curr.next != null) curr = curr.next;
 
         size++;
@@ -55,7 +57,9 @@ public class LinkedList {
 
 }
 
+/*
 class LLMain {
+    // this is for basic LinkedList
     public static void main(String []args) {
         LinkedList ll = new LinkedList();
         ll.insertAtHead(1);
@@ -69,4 +73,4 @@ class LLMain {
 
         ll.printLinkedList();
     }
-}
+}*/
