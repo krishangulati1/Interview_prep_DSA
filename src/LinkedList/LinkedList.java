@@ -40,6 +40,7 @@ public class LinkedList {
         while(curr.next != null) {
             if(curr.next.data == data) {
                 curr.next = curr.next.next;
+                size--;
                 return;
             }
             curr = curr.next;
@@ -52,16 +53,6 @@ public class LinkedList {
         return size;
     }
 
-}
-
-class Node {
-    int data;
-    Node next;
-
-    public Node (int data) {
-        this.data = data;
-        this.next = null;
-    }
 }
 
 class LLMain {
