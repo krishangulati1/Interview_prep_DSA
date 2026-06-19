@@ -3,17 +3,24 @@ package Patterns.Two_Sum;
 public class Palindrome {
 
     public Boolean checkPalindrome(String s) {
-        //Use 2 pointer technique to find if the string is Palindrome
-        if(s.isEmpty()) return true;
-
-        s = s.toLowerCase();
-
         int left = 0, right = s.length() - 1;
 
-        while(left < right) {
-            if(s.charAt(left) != s.charAt(right)) {
-                return false;
+        while (left < right) {
+            // Move left pointer forward if it's on a non-alphanumeric character
+            while (left < right && !Character.isLetterOrDigit(s.charAt(left))) {
+                System.out.println("\tSkipping non-alphanumeric at left: '" + s.charAt(left) + "' (index " + left + ")");
+                left++;
             }
+
+            // Move right pointer backward if it's on a non-alphanumeric character
+            while (left < right && !Character.isLetterOrDigit(s.charAt(right))) {
+                System.out.println("\tSkipping non-alphanumeric at right: '" + s.charAt(right) + "' (index " + right + ")");
+                right--;
+            }
+
+            System.out.println("\tLeft -> '" + s.charAt(left) + "' (index " + left + "), Right -> '" + s.charAt(right) + "' (index " + right + ")");
+
+            // Move pointers inward
             left++;
             right--;
         }
