@@ -1,4 +1,4 @@
-package Patterns.Two_Sum;
+package Patterns.TwoSum;
 
 import java.util.ArrayList;
 import java.util.Arrays;

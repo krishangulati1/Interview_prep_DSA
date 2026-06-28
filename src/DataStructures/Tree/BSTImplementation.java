@@ -1,7 +1,7 @@
-package Tree;
+package DataStructures.Tree;
 
 /**
- * Binary Search Tree (BST) Implementation in Java
+ * Binary Search DataStructures.LinkedList.LinkedList.LinkedList.Tree (BST) Implementation in Java
  * A BST is a binary tree where:
  * - Left subtree contains values less than the node
  * - Right subtree contains values greater than the node
@@ -329,7 +329,7 @@ public class BSTImplementation {
             bst.insert(val);
         }
 
-        System.out.println("\n=== Tree Traversals ===");
+        System.out.println("\n=== DataStructures.LinkedList.LinkedList.LinkedList.Tree Traversals ===");
         bst.inorderTraversal();
         bst.preorderTraversal();
         bst.postorderTraversal();
@@ -339,7 +339,7 @@ public class BSTImplementation {
         System.out.println("Search 40: " + bst.search(40));
         System.out.println("Search 100: " + bst.search(100));
 
-        System.out.println("\n=== Tree Properties ===");
+        System.out.println("\n=== DataStructures.LinkedList.LinkedList.LinkedList.Tree Properties ===");
         System.out.println("Height of tree: " + bst.getHeight());
         System.out.println("Is tree balanced: " + bst.isBalanced());
 

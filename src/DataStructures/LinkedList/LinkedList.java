@@ -1,4 +1,4 @@
-package LinkedList;
+package DataStructures.LinkedList;
 
 public class LinkedList {
 
@@ -27,7 +27,7 @@ public class LinkedList {
 
     void printLinkedList() {
         Node curr = head;
-        System.out.println("Printing LinkedList.LinkedList -");
+        System.out.println("Printing DataStructures.LinkedList.LinkedList.LinkedList.DataStructures.LinkedList.LinkedList.LinkedList -");
         while(curr != null) {
             System.out.print(curr.data + " ");
             curr = curr.next;
@@ -59,9 +59,9 @@ public class LinkedList {
 
 /*
 class LLMain {
-    // this is for basic LinkedList
+    // this is for basic DataStructures.LinkedList.LinkedList.LinkedList
     public static void main(String []args) {
-        LinkedList ll = new LinkedList();
+        DataStructures.LinkedList.LinkedList.LinkedList ll = new DataStructures.LinkedList.LinkedList.LinkedList();
         ll.insertAtHead(1);
         ll.insertAtHead(2);
         ll.insertAtHead(3);

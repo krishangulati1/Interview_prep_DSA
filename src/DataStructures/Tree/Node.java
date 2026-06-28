@@ -1,4 +1,4 @@
-package Tree;
+package DataStructures.Tree;
 
 public class Node {
     int value;

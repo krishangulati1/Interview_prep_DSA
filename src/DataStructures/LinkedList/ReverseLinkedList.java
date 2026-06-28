@@ -1,4 +1,4 @@
-package LinkedList;
+package DataStructures.LinkedList;
 
 public class ReverseLinkedList {
     static Node reverseLinkedList(Node head) {

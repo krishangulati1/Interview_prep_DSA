@@ -1,4 +1,4 @@
-package Patterns.Two_Sum;
+package Patterns.TwoSum;
 
 public class Palindrome {
 
